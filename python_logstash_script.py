@@ -3,9 +3,9 @@ import logstash
 import sys
 import time
 
-t_logger = logging.getLogger('python-logstash-logger')
+t_logger = logging.getLogger('python-LOGSTASH-log')
 t_logger.setLevel(logging.INFO)
-t_logger.addHandler(logstash.LogstashHandler('52.14.84.187', 5959, version=1))
+t_logger.addHandler(logstash.LogstashHandler('54.221.29.204', 5959, version=1))
 
 t_logger.error('python-logstash: test error')
 t_logger.info('python-logstash: test info')
